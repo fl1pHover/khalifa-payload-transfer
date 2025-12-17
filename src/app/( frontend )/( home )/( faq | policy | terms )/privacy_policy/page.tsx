@@ -1,6 +1,5 @@
-// import Privacy from '../../../../../markdowns/privacy-policy.mdx'
-// import Privacy from '@markdowns/privacy-policy.mdx'
-import Privacy from './test.mdx'
+import Privacy from './privacy-list.mdx'
+
 export default function Page() {
   return (
     <>

@@ -1,5 +1,11 @@
 'use client'
 
+import { Handbag, Heart, LogOut, TextAlignJustify, User, X } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useState } from 'react'
+
 import {
   Drawer,
   DrawerContent,
@@ -11,13 +17,8 @@ import {
 import { NAV_ITEMS, SOCIALS } from '@/lib/constants'
 import useHydration from '@/lib/use-hydration'
 import { cn } from '@/lib/utils'
-import { Handbag, Heart, LogOut, TextAlignJustify, User, X } from 'lucide-react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { useState } from 'react'
-import Logo from '../../../public/logo/logo-white.svg'
 
+import Logo from '../../../public/logo/logo-white.svg'
 import { NavCountItem } from '../features/nav-product-count'
 import ProfileDropDown from '../features/profile-dropdown'
 import Cart from '../pages/cart/cart'

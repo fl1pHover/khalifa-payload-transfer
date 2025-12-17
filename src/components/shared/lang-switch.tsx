@@ -1,14 +1,16 @@
 'use client'
 
+import { ChevronDown } from 'lucide-react'
+import Image from 'next/image'
+import { useState } from 'react'
+
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { ChevronDown } from 'lucide-react'
-import Image from 'next/image'
-import { useState } from 'react'
+
 import EN from '../../../public/lang/en.png'
 import MN from '../../../public/lang/mn.png'
 

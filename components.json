@@ -18,8 +18,7 @@
     "lib": "@/lib",
     "hooks": "@/hooks",
     "constants": "@/constants",
-    "types": "@/types",
-    "markdowns": "@/markdowns"
+    "types": "@/types"
   },
   "registries": {}
 }

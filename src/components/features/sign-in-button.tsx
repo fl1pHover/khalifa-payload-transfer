@@ -1,5 +1,9 @@
 'use server'
 
+import { Handbag, Heart, LogOut, TextAlignJustify, User, X } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+
 import {
   Drawer,
   DrawerContent,
@@ -8,25 +12,23 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '@/components/ui/drawer'
-import { Handbag, Heart, LogOut, TextAlignJustify, User, X } from 'lucide-react'
-import Image from 'next/image'
-import Link from 'next/link'
+
 import LangSwitch from '../shared/lang-switch'
 import { Button } from '../ui/button'
 import { NavCountItem } from './nav-product-count'
 
 interface SignInButtonProps {
-  setOpenNav: (open: boolean) => void
-  setOpenCart: (open: boolean) => void
   openCart: boolean
   openNav: boolean
+  setOpenCart: (open: boolean) => void
+  setOpenNav: (open: boolean) => void
 }
 
 export async function SignInButton({
-  setOpenNav,
+  openCart,
   openNav,
   setOpenCart,
-  openCart,
+  setOpenNav,
 }: SignInButtonProps) {
   function handleOpenCart() {
     setOpenCart(true)

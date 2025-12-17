@@ -1,4 +1,4 @@
-import Terms from '@markdowns/terms-and-conditions.mdx'
+import Terms from './terms-list.mdx'
 
 export default function Page() {
   return (

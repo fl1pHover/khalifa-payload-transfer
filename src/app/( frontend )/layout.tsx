@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 
 import { Ysabeau_Infant } from 'next/font/google'
 import { Toaster } from 'sonner'
+
 import './globals.css'
 
 const ysabeauInfant = Ysabeau_Infant({
