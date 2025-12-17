@@ -1,4 +1,5 @@
 import { withPayload } from '@payloadcms/next/withPayload'
+const withMDX = require('@next/mdx')()
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -12,6 +13,11 @@ const nextConfig = {
 
     return webpackConfig
   },
+
+  images: {
+    // ATTENTION: MOCK
+    domains: ['cdn.dummyjson.com'],
+  },
 }
 
-export default withPayload(nextConfig, { devBundleServerPackages: false })
+export default withPayload(withMDX(nextConfig, { devBundleServerPackages: false }))
